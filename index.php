@@ -1,7 +1,7 @@
 <?php
-// TOKEN
-$token = "8377435878:AAF4B-15fUg5Qe1glYI5ZGbEPlDcFQz9lT0"; // bot token
-$admin = "5283234975"; // userID of your account
+// 替换index.php中原来的$token和$admin定义
+$token = getenv('BOT_TOKEN'); // 读取Railway环境变量
+$admin = getenv('ADMIN_ID');  // 读取Railway环境变量
 
 // BOT
 function bot($method, $datas = [])
